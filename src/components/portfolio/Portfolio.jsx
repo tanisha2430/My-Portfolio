@@ -5,10 +5,24 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "Smart Campus Solutions Platform(Ongoing)",
+    title: "Smart Campus Solutions Platform",
     img: "/Home_page.png",
     desc: "This platform includes smart solutions in six domains including events and communication, resource optimization, smart campus navigation, environmental sustainability, feedback and improvements, and automated library services.",
     git:"https://github.com/Tanishasaxena24/Campus-Elevate",
+  },
+   {
+    id: 2,
+    title: "CardioScan",
+    img: "/cardioscan2.png",
+    desc: "It leverage AI  to analyze ECG images for detecting cardiovascular diseases. It provides accurate predictions to classify ECGs as normal or abnormal, aiding in early diagnosis.",
+    git:"https://github.com/Tanishasaxena24/AI-Powered-CardioScan",
+  },
+   {
+    id: 3,
+    title: "Merchant Interactions",
+    img: "/merchant.png",
+    desc: `This project adds a "Merchant Interactions" feature to a CRM system, enabling agents to log communications with merchants, assign tasks, set reminders, and view interaction history.`,
+    git:"https://github.com/Tanishasaxena24/Merchant-Interactions-Website",
   },
   // {
   //   id: 2,
