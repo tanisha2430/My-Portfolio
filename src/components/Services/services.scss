@@ -111,6 +111,16 @@
         flex: 2;
         max-width: 1200px;
         margin: auto;
+        padding: 0 15px;
+        cursor: grab;
+        overflow-x: auto;     
+        overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
         @include mobile{
             flex-direction: column;
@@ -120,7 +130,6 @@
             justify-content: center;
          }
          @include tablet{
-            flex-wrap: wrap;
             margin: 30px;
             gap: 10px;
          }
@@ -133,8 +142,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            max-width: 300px;
-
+           flex: 0 1 auto;          // allows box to expand according to content but not shrink below min-width
+           min-width: 290px;
             
 
             h2{
