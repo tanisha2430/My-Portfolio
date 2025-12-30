@@ -45,8 +45,8 @@ function Hero() {
       <div className="wrapper">
       <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
         <motion.h2 variants={textVariants}>TANISHA SAXENA</motion.h2>
-        <motion.h1 variants={textVariants}>Web Developer</motion.h1>
-        <motion.p variants={textVariants}>I am a young dynamic Web Developer,deeply committed to achieving excellence driven by genuine passion for my work. </motion.p>
+        <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
+        <motion.p variants={textVariants}>A young, dynamic and result-driven Full Stack Developer with hands-on experience across FinTech, mobile apps, cloud infrastructure, and scalable web systems. I aim to contribute to high-impact engineering teams by building secure, efficient, and user-centric solutions. </motion.p>
 
         <motion.img
             variants={textVariants}
@@ -56,7 +56,7 @@ function Hero() {
           />
        </motion.div>
 <motion.div className="sliding" variants={slideVariants} initial="initial" animate="animate">
-React Developer Java Coder 
+Full Stack Developer 
 </motion.div>
 
       <div className="imageContainer">
