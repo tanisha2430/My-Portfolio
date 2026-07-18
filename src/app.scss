@@ -1,47 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    font-family: 'Times New Roman', Times, serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geist", system-ui, sans-serif;
 }
-// rgb(145, 108, 108)
-body{
-    background-color:#0c0c1d;
-    color:white;
+
+html {
+  scroll-behavior: smooth;
 }
-html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+
+body {
+  background: #0b0f14;
+  color: #f8fafc;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
-section{
-   
-        height: 100vh;
-        width: 100vw;
-        scroll-snap-align: center;
-        overflow: hidden;
-     
+
+a {
+  color: #3b82f6;
+  text-decoration: none;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+
+a:hover {
+  color: #60a5fa;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+}
+
+[data-reveal] {
+  opacity: 0;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(-8%, -4%);
+  }
+  50% {
+    transform: translate(10%, 6%);
+  }
+  100% {
+    transform: translate(-8%, -4%);
+  }
+}
+
+@keyframes pulseDot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.hero-viewport {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin full-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 // Responsive design
 
-@mixin mobile{
-    @media(max-width:738px){
-        @content
-    }
-};
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
 
-@mixin tablet{
-    @media(max-width:1024px){
-        @content
-    }
-};
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
 
-@mixin desktop{
-    @media(max-width:1366px){
-        @content
-    }
-};
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}

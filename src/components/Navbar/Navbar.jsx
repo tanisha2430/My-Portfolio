@@ -1,39 +1,23 @@
-import Sidebar from '../sidebar/Sidebar'
-import './navbar.scss'
-import {motion} from 'framer-motion'
+import "./navbar.scss";
 
 function Navbar() {
   return (
-    <div className='navbar'>
-        
-        <div className="wrapper">
-        <Sidebar/>
-            {/* <div className='head'> */} 
-            {/* <motion.span
-            initial={{opacity:0,scale:0.5}}
-            animate={{opacity:1,scale:1}}
-            transition={{duration:1}}
-            className='logo'><img src="/mylogo.png" alt="logo" /></motion.span> */}
-           
-            <motion.span 
-            initial={{opacity:0,scale:0.5}}
-            animate={{opacity:1,scale:1}}
-            transition={{duration:1}}
-            className='name'><img className='img' src="/initials.png" alt="initials" />
-              Tanisha Saxena</motion.span>
-        
-            <motion.div
-            initial={{opacity:0,scale:0.5}}
-            animate={{opacity:1,scale:1}}
-            transition={{duration:1}}
-            className="link">
-                <a href="https://www.linkedin.com/in/tanishasaxena2412"><img src='/linkedin.png' alt="linkedin" /></a>
-                <a href="https://github.com/Tanishasaxena24"><img src='/github.png' alt="github" /></a>
-               
-            </motion.div>
+    <nav className="navbar">
+      <div className="navbar-wrapper">
+        <a href="#top" className="navbar-logo">
+          Tanisha Saxena<span>.</span>
+        </a>
+        <div className="navbar-links">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#stack">Stack</a>
+          <a href="#contact" className="navbar-cta">
+            Get in touch
+          </a>
         </div>
-        </div>
-  )
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

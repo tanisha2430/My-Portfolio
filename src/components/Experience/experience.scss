@@ -1,8 +1,142 @@
-.experience{
-    background-image: url('Roadmap.png');
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
+@import "../../app.scss";
 
+.experience {
+  @include full-section;
+  padding: 120px 64px 40px;
+
+  @include mobile {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.experience-wrapper {
+  width: 100%;
+}
+
+.experience-eyebrow {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: #3b82f6;
+}
+
+h2 {
+  margin: 14px 0 0;
+  font-size: clamp(28px, 3.6vw, 44px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.experience-timeline {
+  margin-top: 56px;
+  position: relative;
+  padding-left: 36px;
+}
+
+.experience-timeline-line {
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.experience-entry {
+  position: relative;
+  padding-bottom: 56px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.experience-dot {
+  position: absolute;
+  left: -33px;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #0b0f14;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+
+  &.experience-dot-active {
+    border-color: #3b82f6;
+  }
+}
+
+.experience-card {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px;
+  transition: transform 0.2s cubic-bezier(0.2, 0.85, 0.3, 1), border-color 0.2s;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.16);
+    transform: translateY(-2px);
+  }
+
+  @include mobile {
+    padding: 24px;
+  }
+}
+
+.experience-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.experience-role {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.experience-org {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.experience-period {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  color: #94a3b8;
+  letter-spacing: 0.06em;
+}
+
+.experience-bullets {
+  margin: 22px 0 0;
+  padding: 0 0 0 18px;
+  display: grid;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #cbd5e1;
+
+  strong {
+    color: #f8fafc;
+    font-weight: 600;
+  }
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+
+  span {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11.5px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #94a3b8;
+  }
 }
