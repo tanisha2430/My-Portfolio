@@ -12,6 +12,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 32px;
+
+  @include mobile {
+    padding: 40px 24px;
+    gap: 24px;
+  }
 }
 
 .stats-number {

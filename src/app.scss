@@ -55,19 +55,6 @@ a:hover {
   }
 }
 
-.hero-viewport {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin full-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 // Responsive design
 
 @mixin mobile {
@@ -85,5 +72,22 @@ a:hover {
 @mixin desktop {
   @media (max-width: 1366px) {
     @content;
+  }
+}
+
+@mixin full-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-viewport {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    height: auto;
   }
 }
