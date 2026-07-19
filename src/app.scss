@@ -83,11 +83,7 @@ a:hover {
 }
 
 .hero-viewport {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-
-  @include mobile {
-    height: auto;
-  }
 }
